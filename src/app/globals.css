@@ -1,0 +1,72 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&family=JetBrains+Mono:wght@100..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap");
+
+body {
+  background-color: #131312;
+  color: #e5e2de;
+  -webkit-font-smoothing: antialiased;
+}
+
+.material-symbols-outlined {
+  font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+  vertical-align: middle;
+}
+
+.technical-line {
+  height: 1px;
+  background-color: #57423b;
+  width: 100%;
+}
+
+.browser-frame {
+  border: 1px solid #57423b;
+  border-top: 24px solid #2a2a28;
+  position: relative;
+}
+
+.browser-frame::before {
+  content: '•••';
+  position: absolute;
+  top: -20px;
+  left: 10px;
+  color: #57423b;
+  font-size: 14px;
+  letter-spacing: 2px;
+}
+
+.cta-button {
+  background-color: #e27042;
+  color: #1c1c18;
+  transition: transform 0.2s, background-color 0.2s;
+  border-radius: 0px !important;
+}
+
+.cta-button:hover {
+  transform: translateY(-2px);
+  background-color: #ffb59a;
+}
+
+.input-underline {
+  border: none;
+  border-bottom: 1px solid #57423b;
+  background: transparent;
+  border-radius: 0;
+  padding: 8px 0;
+}
+
+.input-underline:focus {
+  outline: none;
+  border-color: #e27042;
+  ring: 0;
+}
+
+@media (max-width: 768px) {
+  .mobile-padding { 
+    padding-left: 20px; 
+    padding-right: 20px; 
+  }
+}
