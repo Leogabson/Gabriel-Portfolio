@@ -44,6 +44,7 @@ export default function PhotoBreakSection() {
                 src="/images/workstation.png"
                 alt="Gabriel's developer workstation with code editor and mobile simulator"
                 fill
+                priority
                 sizes="(max-width: 768px) 100vw, 680px"
                 className="object-cover object-center"
               />

@@ -72,6 +72,7 @@ export default function HeroSection() {
                 src="/images/20260512_182915.jpg"
                 alt="Gabriel Ehuwa - Software Engineer"
                 fill
+                priority
                 sizes="(max-width: 1024px) 100vw, 500px"
                 className="object-cover"
               />
