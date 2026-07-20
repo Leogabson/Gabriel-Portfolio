@@ -2,7 +2,7 @@ import skills from "@/data/skills";
 
 export default function SkillsSection() {
   return (
-    <section className="mb-40" id="skills">
+    <section className="mb-40 max-w-[1200px] mx-auto px-6 md:px-margin-page" id="skills">
       <div className="technical-line mb-12"></div>
       <h2 className="font-serif text-headline-lg text-on-background mb-12">Stack &amp; Expertise</h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12">

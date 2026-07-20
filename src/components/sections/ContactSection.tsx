@@ -3,7 +3,7 @@ import personal from "@/data/personal";
 
 export default function ContactSection() {
   return (
-    <section className="mb-40 grid grid-cols-12 gap-gutter pt-12 border-t border-outline-variant" id="contact">
+    <section className="mb-40 max-w-[1200px] mx-auto px-6 md:px-margin-page grid grid-cols-12 gap-gutter pt-12 border-t border-outline-variant" id="contact">
       <div className="col-span-12 md:col-span-5">
         <h2 className="font-serif text-headline-lg text-on-background mb-4">Start a Connection</h2>
         <p className="font-mono text-body-md text-on-surface-variant mb-12">
