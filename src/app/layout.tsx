@@ -16,6 +16,9 @@ export const metadata: Metadata = {
     default: "Gabriel Ehuwa | Software Engineer",
     template: "%s | Gabriel Ehuwa",
   },
+  alternates: {
+    canonical: "https://leogabson.vercel.app",
+  },
   description:
     "Full-stack engineer building products from concept to scale — architecture, backend systems, and user-centric design.",
   keywords: [
