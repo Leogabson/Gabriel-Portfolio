@@ -44,11 +44,11 @@ export const metadata: Metadata = {
     title: "Gabriel Ehuwa | Software Engineer",
     description:
       "Engineering full-stack products from concept to scale, bridging the gap between technical architecture and user-centric design.",
-    url: "https://leogabson.github.io",
+    url: "https://leogabson.vercel.app",
     siteName: "Gabriel Ehuwa Portfolio",
     images: [
       {
-        url: "/images/headshot.jpg",
+        url: "https://leogabson.vercel.app/images/headshot.png",
         width: 1200,
         height: 1200,
         alt: "Gabriel Ehuwa | Software Engineer",
@@ -62,7 +62,7 @@ export const metadata: Metadata = {
     title: "Gabriel Ehuwa | Software Engineer",
     description:
       "Engineering full-stack products from concept to scale, bridging the gap between technical architecture and user-centric design.",
-    images: ["/images/headshot.jpg"],
+    images: ["https://leogabson.vercel.app/images/headshot.png"],
   },
   robots: {
     index: true,
