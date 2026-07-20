@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     template: "%s | Gabriel Ehuwa",
   },
   description:
-    "Engineering full-stack products from concept to scale, bridging the gap between technical architecture and user-centric design.",
+    "Full-stack engineer building products from concept to scale — architecture, backend systems, and user-centric design.",
   keywords: [
     "Gabriel Ehuwa",
     "Leo Gabson",
@@ -43,14 +43,14 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Gabriel Ehuwa | Software Engineer",
     description:
-      "Engineering full-stack products from concept to scale, bridging the gap between technical architecture and user-centric design.",
+      "Full-stack engineer building products from concept to scale — architecture, backend systems, and user-centric design.",
     url: "https://leogabson.vercel.app",
     siteName: "Gabriel Ehuwa Portfolio",
     images: [
       {
-        url: "https://leogabson.vercel.app/images/headshot.png",
+        url: "https://leogabson.vercel.app/images/og-image.png",
         width: 1200,
-        height: 1200,
+        height: 630,
         alt: "Gabriel Ehuwa | Software Engineer",
       },
     ],
@@ -61,8 +61,8 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Gabriel Ehuwa | Software Engineer",
     description:
-      "Engineering full-stack products from concept to scale, bridging the gap between technical architecture and user-centric design.",
-    images: ["https://leogabson.vercel.app/images/headshot.png"],
+      "Full-stack engineer building products from concept to scale — architecture, backend systems, and user-centric design.",
+    images: ["https://leogabson.vercel.app/images/og-image.png"],
   },
   robots: {
     index: true,
