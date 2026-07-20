@@ -1,10 +1,21 @@
+"use client";
+
+import { motion } from "framer-motion";
 import ContactForm from "@/components/common/ContactForm";
 import personal from "@/data/personal";
+import { fadeUp, sectionStaggerContainer, viewportRepeat } from "@/lib/motion";
 
 export default function ContactSection() {
   return (
-    <section className="mb-40 max-w-[1200px] mx-auto px-6 md:px-margin-page grid grid-cols-12 gap-gutter pt-12 border-t border-outline-variant" id="contact">
-      <div className="col-span-12 md:col-span-5">
+    <motion.section
+      className="mb-40 max-w-[1200px] mx-auto px-6 md:px-margin-page grid grid-cols-12 gap-gutter pt-12 border-t border-outline-variant"
+      id="contact"
+      initial="hidden"
+      whileInView="visible"
+      viewport={viewportRepeat}
+      variants={sectionStaggerContainer}
+    >
+      <motion.div variants={fadeUp} className="col-span-12 md:col-span-5">
         <h2 className="font-serif text-headline-lg text-on-background mb-4">Start a Connection</h2>
         <p className="font-mono text-body-md text-on-surface-variant mb-12">
           Available for consulting, full-time engineering roles, or architectural deep-dives.
@@ -43,10 +54,10 @@ export default function ContactSection() {
             </a>
           )}
         </div>
-      </div>
-      <div className="col-span-12 md:col-span-7 bg-[#20201e] p-8 md:p-12">
+      </motion.div>
+      <motion.div variants={fadeUp} className="col-span-12 md:col-span-7 bg-[#20201e] p-8 md:p-12">
         <ContactForm />
-      </div>
-    </section>
+      </motion.div>
+    </motion.section>
   );
 }
