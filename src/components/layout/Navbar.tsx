@@ -28,11 +28,12 @@ export default function Navbar() {
   return (
     <header className="fixed top-0 left-0 w-full z-50 bg-[#131312] border-b border-outline-variant">
       <div className="max-w-[1200px] mx-auto px-6 md:px-margin-page py-6 flex justify-between items-center">
-        <a 
-          href="#" 
-          className="font-serif text-headline-md font-bold text-on-background tracking-tight hover:text-primary transition-colors duration-200"
+        <a
+          href="#"
+          className="text-xl font-bold text-on-background tracking-wide hover:text-primary transition-colors duration-200"
+          style={{ fontFamily: "'Cormorant Garamond', serif" }}
         >
-          LEO GABSON
+          Leo Gabson
         </a>
 
         {/* Desktop Navigation */}
