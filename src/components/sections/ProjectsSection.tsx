@@ -3,6 +3,7 @@
 import { useRef, useState } from "react";
 import Image from "next/image";
 import { motion, AnimatePresence, LayoutGroup } from "framer-motion";
+import { ArrowUpRight, Code2 } from "lucide-react";
 import projects from "@/data/projects";
 import {
   cardStaggerContainer,
@@ -183,9 +184,7 @@ export default function ProjectsSection() {
                             rel="noopener noreferrer"
                           >
                             Live Demo{" "}
-                            <span className="material-symbols-outlined text-sm">
-                              north_east
-                            </span>
+                            <ArrowUpRight size={14} strokeWidth={1.5} />
                           </a>
                         )}
                         {project.github && (
@@ -196,9 +195,7 @@ export default function ProjectsSection() {
                             rel="noopener noreferrer"
                           >
                             Source{" "}
-                            <span className="material-symbols-outlined text-sm">
-                              code
-                            </span>
+                            <Code2 size={14} strokeWidth={1.5} />
                           </a>
                         )}
                       </div>
@@ -272,9 +269,7 @@ export default function ProjectsSection() {
                               rel="noopener noreferrer"
                             >
                               Live{" "}
-                              <span className="material-symbols-outlined text-[11px]">
-                                north_east
-                              </span>
+                              <ArrowUpRight size={12} strokeWidth={1.5} />
                             </a>
                           )}
                           {project.github && (
@@ -285,9 +280,7 @@ export default function ProjectsSection() {
                               rel="noopener noreferrer"
                             >
                               Code{" "}
-                              <span className="material-symbols-outlined text-[11px]">
-                                code
-                              </span>
+                              <Code2 size={12} strokeWidth={1.5} />
                             </a>
                           )}
                         </div>
@@ -331,9 +324,7 @@ export default function ProjectsSection() {
             <span className="border-b border-transparent group-hover:border-primary transition-colors duration-300">
               View more of my work on GitHub
             </span>
-            <span className="material-symbols-outlined text-sm opacity-60 group-hover:opacity-100 group-hover:translate-x-1 transition-all duration-300">
-              north_east
-            </span>
+            <ArrowUpRight size={16} strokeWidth={1.5} className="opacity-60 group-hover:opacity-100 group-hover:translate-x-1 transition-all duration-300" />
           </a>
         </motion.div>
       </div>

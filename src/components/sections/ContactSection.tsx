@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import { Mail, Linkedin, Github, Twitter } from "lucide-react";
 import ContactForm from "@/components/common/ContactForm";
 import personal from "@/data/personal";
 import { fadeUp, sectionStaggerContainer, viewportRepeat } from "@/lib/motion";
@@ -25,7 +26,7 @@ export default function ContactSection() {
             className="block font-mono text-label-sm text-on-background hover:text-primary transition-colors flex items-center gap-4"
             href={`mailto:${personal.email}`}
           >
-            <span className="material-symbols-outlined text-primary">mail</span> {personal.email}
+            <Mail size={16} strokeWidth={1.5} className="text-primary shrink-0" /> {personal.email}
           </a>
           <a
             className="block font-mono text-label-sm text-on-background hover:text-primary transition-colors flex items-center gap-4"
@@ -33,7 +34,7 @@ export default function ContactSection() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <span className="material-symbols-outlined text-primary">link</span> LinkedIn Profile
+            <Linkedin size={16} strokeWidth={1.5} className="text-primary shrink-0" /> LinkedIn Profile
           </a>
           <a
             className="block font-mono text-label-sm text-on-background hover:text-primary transition-colors flex items-center gap-4"
@@ -41,7 +42,7 @@ export default function ContactSection() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <span className="material-symbols-outlined text-primary">terminal</span> GitHub Profile
+            <Github size={16} strokeWidth={1.5} className="text-primary shrink-0" /> GitHub Profile
           </a>
           {personal.x && (
             <a
@@ -50,7 +51,7 @@ export default function ContactSection() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <span className="material-symbols-outlined text-primary">share</span> Twitter / X
+              <Twitter size={16} strokeWidth={1.5} className="text-primary shrink-0" /> Twitter / X
             </a>
           )}
         </div>
