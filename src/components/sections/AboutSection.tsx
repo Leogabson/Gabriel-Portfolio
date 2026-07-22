@@ -52,17 +52,17 @@ export default function AboutSection() {
             </p>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-12">
               <div>
-                <h4 className="font-mono text-label-sm text-on-background mb-4 border-b border-outline-variant pb-2 uppercase tracking-wider">
+                <h3 className="font-mono text-label-sm text-on-background mb-4 border-b border-outline-variant pb-2 uppercase tracking-wider">
                   LOCATION
-                </h4>
+                </h3>
                 <p className="font-mono text-body-md text-on-surface-variant">
                   Lagos, Nigeria // GMT+1
                 </p>
               </div>
               <div>
-                <h4 className="font-mono text-label-sm text-on-background mb-4 border-b border-outline-variant pb-2 uppercase tracking-wider">
+                <h3 className="font-mono text-label-sm text-on-background mb-4 border-b border-outline-variant pb-2 uppercase tracking-wider">
                   EDUCATION
-                </h4>
+                </h3>
                 <p className="font-mono text-body-md text-on-surface-variant">
                   Computer Engineering Undergrad
                 </p>

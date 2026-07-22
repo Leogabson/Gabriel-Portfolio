@@ -4,6 +4,7 @@ import { ThemeProvider } from "@/context/ThemeContext";
 import { PortfolioProvider } from "@/context/PortfolioContext";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
+import { personal } from "@/data/personal";
 
 export const viewport: Viewport = {
   themeColor: "#131312",
@@ -17,7 +18,7 @@ export const metadata: Metadata = {
     template: "%s | Gabriel Ehuwa",
   },
   alternates: {
-    canonical: "https://leogabson.vercel.app",
+    canonical: personal.siteUrl,
   },
   description:
     "Full-stack engineer building products from concept to scale — architecture, backend systems, and user-centric design.",
@@ -34,6 +35,7 @@ export const metadata: Metadata = {
     "NexRate",
     "SolVigil",
     "Gathrio",
+    "Top Website developers in Nigeria",
   ],
   authors: [{ name: "Gabriel Ehuwa" }],
   creator: "Gabriel Ehuwa",
@@ -47,11 +49,11 @@ export const metadata: Metadata = {
     title: "Gabriel Ehuwa | Software Engineer",
     description:
       "Full-stack engineer building products from concept to scale — architecture, backend systems, and user-centric design.",
-    url: "https://leogabson.vercel.app",
+    url: personal.siteUrl,
     siteName: "Gabriel Ehuwa Portfolio",
     images: [
       {
-        url: "https://leogabson.vercel.app/images/og-image.png",
+        url: `${personal.siteUrl}/images/og-image.png`,
         width: 1200,
         height: 630,
         alt: "Gabriel Ehuwa | Software Engineer",
@@ -65,7 +67,13 @@ export const metadata: Metadata = {
     title: "Gabriel Ehuwa | Software Engineer",
     description:
       "Full-stack engineer building products from concept to scale — architecture, backend systems, and user-centric design.",
-    images: ["https://leogabson.vercel.app/images/og-image.png"],
+    images: [`${personal.siteUrl}/images/og-image.png`],
+    creator: personal.xHandle,
+    site: personal.xHandle,
+  },
+  icons: {
+    icon: "/images/Whisk_a3888015c99f4aca7074dadb5c7c8d4edr.svg",
+    shortcut: "/images/Whisk_a3888015c99f4aca7074dadb5c7c8d4edr.svg",
   },
   robots: {
     index: true,
@@ -80,6 +88,47 @@ export const metadata: Metadata = {
   },
 };
 
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Person",
+  name: personal.name,
+  url: personal.siteUrl,
+  jobTitle: personal.title,
+  description:
+    "Full-stack engineer building products from concept to scale — architecture, backend systems, and user-centric design.",
+  image: `${personal.siteUrl}/images/og-image.png`,
+  email: `mailto:${personal.email}`,
+  address: {
+    "@type": "PostalAddress",
+    addressLocality: "Lagos",
+    addressCountry: "NG",
+  },
+  worksFor: {
+    "@type": "Organization",
+    name: "NexRate",
+    url: "https://nexrate.app",
+  },
+  alumniOf: {
+    "@type": "CollegeOrUniversity",
+    name: "Ladoke Akintola University of Technology",
+  },
+  sameAs: [
+    personal.github,
+    personal.linkedin,
+    personal.x,
+  ],
+  knowsAbout: [
+    "React",
+    "Next.js",
+    "Node.js",
+    "Go",
+    "TypeScript",
+    "PostgreSQL",
+    "Fullstack Development",
+    "Software Architecture",
+  ],
+};
+
 export default function RootLayout({
   children,
 }: {
@@ -87,6 +136,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="dark scroll-smooth" suppressHydrationWarning>
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
+      </head>
       <body className="font-mono text-body-md antialiased min-h-screen flex flex-col bg-background text-[#e5e2de] selection:bg-primary-container selection:text-on-primary-container">
         <ThemeProvider>
           <PortfolioProvider>

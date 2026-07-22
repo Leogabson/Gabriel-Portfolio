@@ -37,9 +37,9 @@ export default function HeroSection() {
               <motion.p
                 variants={fadeUp}
                 transition={baseTransition}
-                className="font-mono text-sm tracking-widest text-primary uppercase"
+                className="font-mono text-lg tracking-widest text-primary uppercase"
               >
-                {personal.title} &amp; Founder
+                {personal.title}
               </motion.p>
 
               <motion.p
