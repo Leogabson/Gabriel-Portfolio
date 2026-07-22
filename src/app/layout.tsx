@@ -21,21 +21,45 @@ export const metadata: Metadata = {
     canonical: personal.siteUrl,
   },
   description:
-    "Full-stack engineer building products from concept to scale — architecture, backend systems, and user-centric design.",
+    "Gabriel Ehuwa is a full-stack software engineer based in Lagos, Nigeria — available for hire for remote and on-site roles. Specializes in React, Next.js, Node.js, Go, and scalable backend systems.",
   keywords: [
+    // — Brand & Identity
     "Gabriel Ehuwa",
     "Leo Gabson",
+    "leogabson",
+    // — Role titles (what recruiters search)
     "Software Engineer",
     "Fullstack Developer",
+    "Full Stack Engineer",
+    "Backend Engineer",
+    "Frontend Developer",
+    "Web Developer",
     "React Developer",
-    "Next.js",
-    "Node.js",
+    "Next.js Developer",
+    "Node.js Developer",
     "Go Developer",
+    "TypeScript Developer",
+    "API Developer",
+    "SaaS Developer",
+    "Fintech Developer",
+    // — Hire intent (recruiter-specific)
+    "software engineer available for hire",
+    "freelance web developer Nigeria",
+    "hire software engineer Nigeria",
+    "remote software engineer Nigeria",
+    "full stack developer for hire",
+    "web developer for hire Lagos",
+    // — Location signals
     "Lagos Nigeria",
+    "Software Engineer Lagos",
+    "Web Developer Lagos Nigeria",
+    "Nigeria Software Developer",
+    "West Africa Software Engineer",
+    // — Projects
     "NexRate",
     "SolVigil",
     "Gathrio",
-    "Top Website developers in Nigeria",
+    "Clestay",
   ],
   authors: [{ name: "Gabriel Ehuwa" }],
   creator: "Gabriel Ehuwa",
@@ -46,9 +70,9 @@ export const metadata: Metadata = {
     telephone: false,
   },
   openGraph: {
-    title: "Gabriel Ehuwa | Software Engineer",
+    title: "Gabriel Ehuwa | Software Engineer — Available for Hire",
     description:
-      "Full-stack engineer building products from concept to scale — architecture, backend systems, and user-centric design.",
+      "Gabriel Ehuwa is a full-stack software engineer based in Lagos, Nigeria — available for hire for remote and on-site roles. Specializes in React, Next.js, Node.js, Go, and scalable backend systems.",
     url: personal.siteUrl,
     siteName: "Gabriel Ehuwa Portfolio",
     images: [
@@ -64,9 +88,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Gabriel Ehuwa | Software Engineer",
+    title: "Gabriel Ehuwa | Software Engineer — Available for Hire",
     description:
-      "Full-stack engineer building products from concept to scale — architecture, backend systems, and user-centric design.",
+      "Gabriel Ehuwa is a full-stack software engineer based in Lagos, Nigeria — available for hire for remote and on-site roles. Specializes in React, Next.js, Node.js, Go, and scalable backend systems.",
     images: [`${personal.siteUrl}/images/og-image.png`],
     creator: personal.xHandle,
     site: personal.xHandle,
@@ -95,7 +119,7 @@ const jsonLd = {
   url: personal.siteUrl,
   jobTitle: personal.title,
   description:
-    "Full-stack engineer building products from concept to scale — architecture, backend systems, and user-centric design.",
+    "Gabriel Ehuwa is a full-stack software engineer based in Lagos, Nigeria — available for hire for remote and on-site roles. Specializes in React, Next.js, Node.js, Go, and scalable backend systems.",
   image: `${personal.siteUrl}/images/og-image.png`,
   email: `mailto:${personal.email}`,
   address: {
@@ -123,10 +147,40 @@ const jsonLd = {
     "Node.js",
     "Go",
     "TypeScript",
+    "JavaScript",
     "PostgreSQL",
-    "Fullstack Development",
+    "Prisma ORM",
+    "REST API Design",
+    "Microservices",
+    "SaaS Development",
+    "Fintech Engineering",
+    "Full Stack Development",
     "Software Architecture",
+    "Cloud Deployment",
+    "System Design",
+    "Database Engineering",
+    "Web Performance Optimization",
   ],
+  hasOccupation: {
+    "@type": "Occupation",
+    name: "Software Engineer",
+    occupationLocation: {
+      "@type": "City",
+      name: "Lagos",
+    },
+    description:
+      "Full-stack software engineer specializing in React, Next.js, Node.js, Go, and scalable backend systems. Available for remote and on-site roles.",
+    skills:
+      "React, Next.js, Node.js, Go, TypeScript, PostgreSQL, REST APIs, SaaS, Fintech",
+    estimatedSalary: {
+      "@type": "MonetaryAmountDistribution",
+      name: "base",
+      currency: "USD",
+      duration: "P1Y",
+      percentile10: 30000,
+      percentile90: 80000,
+    },
+  },
 };
 
 export default function RootLayout({
