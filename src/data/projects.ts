@@ -49,14 +49,13 @@ export const projects: Project[] = [
     github: "https://github.com/Leogabson/matrix-encryption",
   },
   {
-    id: "lautech-studyhub",
-    name: "Lautech-StudyHub",
+    id: "Course-flock",
+    name: "Course flock",
     category: "EDUCATION",
     description: "A real-time collaboration tool and academic resource sharing platform for university students.",
     technologies: ["React", "Firebase", "Tailwind CSS", "JavaScript"],
     image: "/images/projects/lautech-studyhub.png",
-    liveDemo: "https://lautech-studyhub.vercel.app",
-    github: "https://github.com/Leogabson/Lautech-StudyHub",
+    liveDemo: "https://courseflock.com",
   },
   {
     id: "simple-rest-api",

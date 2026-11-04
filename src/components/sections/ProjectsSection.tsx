@@ -216,7 +216,7 @@ export default function ProjectsSection() {
                 {secondaryProjects.map((project, idx) => {
                   const number = idx + 3;
                   let sectionLabel = "SYSTEMS";
-                  if (project.id === "lautech-studyhub")
+                  if (project.id === "Courseflock")
                     sectionLabel = "EDUCATION";
                   if (project.id === "simple-rest-api")
                     sectionLabel = "UTILITIES";
