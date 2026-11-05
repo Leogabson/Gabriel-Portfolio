@@ -60,6 +60,7 @@ export const metadata: Metadata = {
     "SolVigil",
     "Gathrio",
     "Clestay",
+    "DevCodeSnap",
   ],
   authors: [{ name: "Gabriel Ehuwa" }],
   creator: "Gabriel Ehuwa",

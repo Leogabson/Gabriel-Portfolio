@@ -19,7 +19,7 @@ type FilterCategory = "All" | "Full-stack" | "Frontend" | "Backend";
 
 const FILTERS: FilterCategory[] = ["All", "Full-stack", "Frontend", "Backend"];
 
-const MAJOR_IDS = ["gathrio", "nexrate", "clestay", "matrix-encryption"];
+const MAJOR_IDS = ["gathrio", "nexrate", "clestay", "devcodesnap", "matrix-encryption"];
 
 function filterProjects(filter: FilterCategory) {
   return projects.filter((project) => {
@@ -32,7 +32,16 @@ function filterProjects(filter: FilterCategory) {
         )
       );
     }
-    if (filter === "Frontend") return project.id === "lautech-studyhub";
+    if (filter === "Frontend") {
+      return (
+        project.id === "Course-flock" ||
+        project.id === "devcodesnap" ||
+        project.category?.includes("EDUCATION") ||
+        project.technologies.some((t) =>
+          ["REACT", "NEXT.JS", "TAILWIND CSS"].includes(t.toUpperCase()),
+        )
+      );
+    }
     if (filter === "Backend") {
       return (
         project.id === "simple-rest-api" ||
@@ -128,6 +137,7 @@ export default function ProjectsSection() {
               {majorProjects.map((project, index) => {
                 const isEven = index % 2 === 0;
                 const projectNum = projects.findIndex(p => p.id === project.id) + 1;
+                const formattedNum = projectNum < 10 ? `0${projectNum}` : `${projectNum}`;
                 return (
                   <motion.div
                     key={project.id}
@@ -157,7 +167,7 @@ export default function ProjectsSection() {
                       className={`col-span-12 md:col-span-5 flex flex-col justify-center ${isEven ? "order-2 pl-0 md:pl-8" : "order-2 md:order-1 pr-0 md:pr-8"}`}
                     >
                       <div className="font-mono text-label-sm text-on-surface-variant mb-4 uppercase tracking-widest">
-                        {`0${projectNum} // ${project.category || "FULL-STACK"}`}
+                        {`${formattedNum} // ${project.category || "FULL-STACK"}`}
                       </div>
                       <h3 className="font-serif text-headline-md text-on-background mb-4">
                         {project.name}
@@ -213,13 +223,10 @@ export default function ProjectsSection() {
                 whileInView="visible"
                 viewport={viewportRepeat}
               >
-                {secondaryProjects.map((project, idx) => {
-                  const number = idx + 3;
-                  let sectionLabel = "SYSTEMS";
-                  if (project.id === "Courseflock")
-                    sectionLabel = "EDUCATION";
-                  if (project.id === "simple-rest-api")
-                    sectionLabel = "UTILITIES";
+                {secondaryProjects.map((project) => {
+                  const projectNum = projects.findIndex((p) => p.id === project.id) + 1;
+                  const formattedNumber = projectNum < 10 ? `0${projectNum}` : `${projectNum}`;
+                  const sectionLabel = project.category || "SYSTEMS";
 
                   return (
                     <motion.div
@@ -233,7 +240,7 @@ export default function ProjectsSection() {
                     >
                       <div>
                         <div className="font-mono text-[10px] text-on-surface-variant mb-4 uppercase tracking-widest">
-                          {`0${number} // ${sectionLabel}`}
+                          {`${formattedNumber} // ${sectionLabel}`}
                         </div>
                         <h3 className="font-serif text-headline-md text-on-background mb-4">
                           {project.name}

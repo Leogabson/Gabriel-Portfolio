@@ -39,6 +39,15 @@ export const projects: Project[] = [
     github: "https://github.com/Leogabson/Clestay",
   },
   {
+    id: "devcodesnap",
+    name: "DevCodeSnap",
+    category: "DEVTOOLS",
+    description: "A local-first Chrome extension designed for developers to capture, organize, and manage code snippets directly from technical documentation and webpages with offline IndexedDB storage.",
+    technologies: ["React", "TypeScript", "Tailwind CSS", "Dexie.js", "Chrome Extension (MV3)"],
+    image: "/images/projects/DevSnap.png",
+    github: "https://github.com/Leogabson/DevCodeSnap",
+  },
+  {
     id: "matrix-encryption",
     name: "Matrix Encryption — Cryptographer's Desk",
     category: "SECURITY / FULL-STACK",
