@@ -61,6 +61,7 @@ export const metadata: Metadata = {
     "Gathrio",
     "Clestay",
     "DevCodeSnap",
+    "DocForge AI",
   ],
   authors: [{ name: "Gabriel Ehuwa" }],
   creator: "Gabriel Ehuwa",

@@ -76,6 +76,15 @@ export const projects: Project[] = [
     github: "https://github.com/Leogabson/Simple-Rest-API",
   },
   {
+    id: "docforge-ai",
+    name: "DocForge AI",
+    category: "AI / SAAS",
+    description: "An AI-powered SaaS platform engineered to transform raw text and Markdown into beautifully styled, professional-grade documents and PDFs with intelligent layout engines and template presets.",
+    technologies: ["Next.js", "TypeScript", "Express", "Prisma", "PostgreSQL", "Tailwind CSS"],
+    image: "/images/projects/docforge-ai.png",
+    github: "https://github.com/Leogabson/DocForge-Ai",
+  },
+  {
     id: "solvigil",
     name: "SolVigil",
     category: "SYSTEMS",
